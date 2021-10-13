@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  filter: brightness(50%);
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 315.14px;
+  height: 210.04px;
+  left: 40%;
+  top: 127px;
+}
+
+h2 {
+  position: absolute;
+  width: 308px;
+  height: 35px;
+  left: 40%;
+  top: 300px;
+  font-family: lobster;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 145.47%;
+  /* or 52px */
+  z-index: 10;
+  text-align: center;
+  color: #ffc703;
+}
+
+.homeButton {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 247px;
+  height: 71px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #202020;
+  color: white;
+  font-size: 40px;
+  font-family: suranna;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
