@@ -23,45 +23,87 @@
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #202020;
-  width: 104%;
-  margin-left: -10px;
+  width: 105vw;
   height: 100px;
   position: fixed;
   bottom: 0px;
 }
 
 .footer .home {
-  float: left;
-  list-style: none;
-  line-height: inherit;
-  padding: 0 65px;
-  width: 42px;
+  position: unset;
+  scale: 30px;
   margin-left: 25px;
   margin-top: 25px;
 }
 
 .footer .favorites {
   position: unset;
-  width: 33px;
+  scale: 30px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .footer .shoppinglist {
-  position: fixed;
-  width: 48px;
+  position: unset;
+  scale: 30%;
   margin-left: 55px;
   margin-top: 25px;
 }
 
 .footer .community {
-  float: right;
-  list-style: none;
-  line-height: inherit;
-  padding: 0 65px;
-  width: 42px;
-  margin-left: 55px;
+  position: unset;
+  scale: 30%;
+  margin-left: 20px;
   margin-top: 25px;
+  padding: 0 50px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 120px;
+}
+
+.container .breakfast {
+  width: 420px;
+  height: 35px;
+  background-color: #202020;
+  margin-top: 120px;
+}
+
+.container .lunch {
+  width: 420px;
+  height: 35px;
+  background-color: #202020;
+}
+
+.container .dinner {
+  width: 420px;
+  height: 35px;
+  background-color: #202020;
+}
+
+.container .desserts {
+  width: 420px;
+  height: 35px;
+  background-color: #202020;
 }
 /*# sourceMappingURL=mainsite.css.map */
