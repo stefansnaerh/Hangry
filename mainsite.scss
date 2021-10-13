@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
 
+//.banner & .footer is the navbar
 .banner {
     background-color: #202020;
     height: 100px;
@@ -22,40 +23,69 @@
 }
 
 .footer {
+display: flex;
+justify-content: space-between;
 background-color: #202020;
-width: 104%;
-margin-left: -10px;
+width: 105vw;
 height: 100px;
 position: fixed;
 bottom: 0px;
     .home{
-        float: left;
-        list-style: none;
-        line-height: inherit;
-        padding: 0 65px;
-        width: 42px;
+        position:unset;
+        scale: 30px;
         margin-left: 25px;
         margin-top: 25px;
     }
     .favorites{
         position:unset;
-        width: 33px;
+        scale: 30px;
         margin-left: 30px;
         margin-top: 30px;
     }
     .shoppinglist{
-        position: fixed;
-        width: 48px;
+        position: unset;
+        scale: 30%;
         margin-left: 55px;
         margin-top: 25px;  
     }
     .community{
-        float: right;
-        list-style: none;
-        line-height: inherit;
-        padding: 0 65px;
-        width: 42px;
-        margin-left: 55px;
+        position: unset;
+        scale: 30%;
+        margin-left: 20px;
         margin-top: 25px; 
+        padding: 0 50px;
     }
 }
+
+$button-color: #202020;
+$button-text-color: #f1f1f1f1;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 120px;
+    .breakfast {
+        width: 420px;
+        height: 35px;
+        background-color: $button-color;
+        margin-top: 120px;
+    }
+    .lunch {
+        width: 420px;
+        height: 35px;
+        background-color: $button-color;
+    }
+    .dinner {
+        width: 420px;
+        height: 35px;
+        background-color: $button-color;
+    }
+    .desserts {
+        width: 420px;
+        height: 35px;
+        background-color: $button-color;
+    }
+}
+
