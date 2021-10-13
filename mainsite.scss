@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+
+.banner {
+    background-color: #202020;
+    height: 100px;
+    width: 104%;
+    margin-left: -10px;
+        .bannerimage{
+            width: 125px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .usernameicon{
+            float: right;
+            list-style: none;
+            height: 45px;
+            margin-top: 20px;
+            line-height: inherit;
+            padding: 0 50px;
+        }
+}
+
+.footer {
+background-color: #202020;
+width: 104%;
+margin-left: -10px;
+height: 100px;
+position: fixed;
+bottom: 0px;
+    .home{
+        float: left;
+        list-style: none;
+        line-height: inherit;
+        padding: 0 65px;
+        width: 42px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .favorites{
+        position:unset;
+        width: 33px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .shoppinglist{
+        position: fixed;
+        width: 48px;
+        margin-left: 55px;
+        margin-top: 25px;  
+    }
+    .community{
+        float: right;
+        list-style: none;
+        line-height: inherit;
+        padding: 0 65px;
+        width: 42px;
+        margin-left: 55px;
+        margin-top: 25px; 
+    }
+}
