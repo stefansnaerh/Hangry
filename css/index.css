@@ -6,16 +6,23 @@ body {
 }
 
 .home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .backgroundImage {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
@@ -26,11 +33,11 @@ body {
 }
 
 .logo {
-  position: absolute;
-  width: 315.14px;
-  height: 210.04px;
-  left: 40%;
-  top: 127px;
+  width: 315vw;
+  height: 210vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h2 {
@@ -56,7 +63,8 @@ h2 {
   left: 50%;
   width: 247px;
   height: 71px;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #202020;
   color: white;
@@ -66,5 +74,7 @@ h2 {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
+/*# sourceMappingURL=index.css.map */
