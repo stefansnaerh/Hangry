@@ -30,16 +30,19 @@ body {
   position: absolute;
   width: 315.14px;
   height: 210.04px;
-  left: 40%;
-  top: 127px;
+  left: 34%;
+  top: 18%;
+
+  transform: translate(-28%, -20%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 h2 {
   position: absolute;
   width: 308px;
   height: 35px;
-  left: 40%;
-  top: 300px;
+  left: 34%;
+  top: 37%;
 
   font-family: lobster;
   font-style: normal;
@@ -47,11 +50,48 @@ h2 {
   font-size: 36px;
   line-height: 145.47%;
   /* or 52px */
-  z-index: 10;
+  transform: translate(-30%, -50%);
+  -ms-transform: translate(-50%, -50%);
 
   text-align: center;
 
   color: #ffc703;
+}
+
+// @ media for scaling logo and h2 with chaning screen sizes
+@media only screen and (min-width: 476px) {
+  h2 {
+    left: 40%;
+  }
+  .logo {
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 672px) {
+  h2 {
+    left: 44%;
+  }
+  .logo {
+    left: 44%;
+  }
+}
+@media only screen and (min-width: 1124px) {
+  h2 {
+    left: 45%;
+  }
+  .logo {
+    left: 45%;
+  }
+}
+
+@media only screen and (min-width: 1640px) {
+  h2 {
+    left: 46%;
+  }
+  .logo {
+    left: 46%;
+  }
 }
 
 .homeButton {
@@ -70,5 +110,6 @@ h2 {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+  border: 1px solid #ffffff;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
