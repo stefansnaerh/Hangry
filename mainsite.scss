@@ -3,22 +3,26 @@
 
 //.banner & .footer is the navbar
 .banner {
-    display: flex;
-    background-color: #202020;
-    height: 100px;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 0;
-    justify-content: space-between;
-    gap: 330px;
+display: flex;
+justify-content: space-between;
+background-color: #202020;
+width: 100vw;
+height: 100px;
+position: fixed; 
+left: 0;
+top: 0;
         .bannerimage{
+            position: unset;
             width: 20vw;
             margin-top: 10px;
             margin-left: 20px;
         }
         .usernameicon{
-            width: 9vw;
+            position: unset;
+            width: 7vw;
+            height: auto;
+            margin-right: 25px;
+            float: right;
         }
 }
 
