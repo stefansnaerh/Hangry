@@ -33,77 +33,30 @@ body {
 }
 
 .logo {
-<<<<<<< HEAD
   position: absolute;
   width: 315.14px;
   height: 210.04px;
-  left: 34%;
-  top: 18%;
-  transform: translate(-28%, -20%);
-  -ms-transform: translate(-50%, -50%);
-=======
-  width: 315vw;
-  height: 210vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> b0d0fd1d9809c5e556c20593836dd37b21fa0079
+  left: 40%;
+  top: 127px;
 }
 
 h2 {
   position: absolute;
   width: 308px;
   height: 35px;
-  left: 34%;
-  top: 37%;
+  left: 40%;
+  top: 300px;
   font-family: lobster;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 145.47%;
   /* or 52px */
-  transform: translate(-30%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  z-index: 10;
   text-align: center;
   color: #ffc703;
 }
 
-@media only screen and (min-width: 476px) {
-  h2 {
-    left: 40%;
-  }
-
-  .logo {
-    left: 40%;
-  }
-}
-@media only screen and (min-width: 672px) {
-  h2 {
-    left: 44%;
-  }
-
-  .logo {
-    left: 44%;
-  }
-}
-@media only screen and (min-width: 1124px) {
-  h2 {
-    left: 45%;
-  }
-
-  .logo {
-    left: 45%;
-  }
-}
-@media only screen and (min-width: 1640px) {
-  h2 {
-    left: 46%;
-  }
-
-  .logo {
-    left: 46%;
-  }
-}
 .homeButton {
   position: absolute;
   top: 80%;
@@ -121,13 +74,7 @@ h2 {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-<<<<<<< HEAD
-  border: 1px solid #ffffff;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-}
-=======
   -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=index.css.map */
->>>>>>> b0d0fd1d9809c5e556c20593836dd37b21fa0079
