@@ -13,15 +13,16 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background-color: #202020;
-width: 100vw;
-max-height: 20vw;
+width: 103vw;
+max-height: 25vw;
 position: fixed; 
 left: 0;
 top: 0;
         .bannerimage{
             position: relative;
-            width: 20vw;
-            margin-top: 10px;
+            width: 25vw;
+            padding: 5px;
+            margin-top: 5px;
             margin-left: 20px;
         }
         .usernameicon{
@@ -142,7 +143,7 @@ $button-text-color: #ffff;
 
 
 .page_title{
-    margin-top: 20vw;
+    margin-top: 25vw;
     display: flex;
     justify-content: center;
     font-size: 5vw;
