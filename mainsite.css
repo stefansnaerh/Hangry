@@ -92,14 +92,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 120px;
+  gap: 12vw;
 }
 
 .container .breakfast {
   width: 85vw;
   height: 9vw;
   background-color: #202020;
-  margin-top: 18vw;
+  margin-top: 10vw;
   border: none;
   border-radius: 999px;
   cursor: pointer;
@@ -169,7 +169,7 @@
 }
 
 .page_title {
-  margin-top: 100px;
+  margin-top: 12vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
