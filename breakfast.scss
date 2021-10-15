@@ -40,49 +40,47 @@
   font-family: lobster;
 }
 // ath. Þarf að laga flex-wrap þegar skjárinn er dreginn út, þær fara í rugl neðst.
-// ath. Allt í einu fara myndirnar yfir header-inn... veit ekkert hvernig það gerðist
+// get ekki sett annað <div> með texta spjaldi og stjörnu, þá fer allt display-ið í ruglið
 .container_breakfast {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  justify-content: center; //eða center ?
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  .starButton {
-    //stjörnu takki
+  .starButton {                 //stjörnu takki
     position: absolute;
-    top: 30px;
-    left: 135px;
+    top: 25px;
+    left: 150px;
     cursor: pointer;
   }
-  .cardImage {
-    //mynda spjald
+  .cardImage {                  //mynda spjald
+    transition: 0.5s;
     display: flex;
     margin-top: 40px;
     cursor: pointer;
   }
-  .cardImage:hover {
-    //hover mynda spjald
+  .cardImage:hover {            //hover mynda spjald
     opacity: 0.5;
   }
   // ath. ég næ ekki að festa texta spjald almennilega við myndina
-  .text {
-    //texta spjald
+  .text {                  //texta spjald
     position: absolute;
-    top: 235px;
-    left: 22px;
-    line-height: 2px;
+    top: 230px;
+    left: 28px;
     font-family: sans-serif;
-    padding-left: 5px;
-    padding-right: 5px;
+    text-align: center;
+    padding: 8px 13px 13px 8px;
     background-color: white;
+    background-size: cover;  //
+    max-width: 35ch;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 2px 3px #aaaa;
   }
 }
 // ath. setja hover lit á add recipe button ?
-.addButton {
-  //add recipe button
+.addButton {                //add recipe button
   position: fixed;
   width: 60px;
   height: 60px;
