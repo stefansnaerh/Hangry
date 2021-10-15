@@ -20,8 +20,8 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #202020;
-  width: 100vw;
-  max-height: 20vw;
+  width: 103vw;
+  max-height: 25vw;
   position: fixed;
   left: 0;
   top: 0;
@@ -29,8 +29,9 @@
 
 .banner .bannerimage {
   position: relative;
-  width: 20vw;
-  margin-top: 10px;
+  width: 25vw;
+  padding: 5px;
+  margin-top: 5px;
   margin-left: 20px;
 }
 
@@ -94,14 +95,48 @@
   gap: 12vw;
 }
 
-.container .page_title {
-  margin-top: 20vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.container .breakfast {
+  width: 85vw;
+  height: 9vw;
+  background-color: #202020;
+  margin-top: 10vw;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #ffff;
+  padding-top: 9px;
+  font-size: 5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+.container .lunch {
+  width: 85vw;
+  height: 9vw;
+  background-color: #202020;
+  margin-top: 1vw;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #ffff;
+  padding-top: 9px;
+  font-size: 5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+.container .dinner {
+  width: 85vw;
+  height: 9vw;
+  background-color: #202020;
+  margin-top: 1vw;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #ffff;
+  padding-top: 9px;
   font-size: 5vw;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
@@ -134,7 +169,7 @@
 }
 
 .page_title {
-  margin-top: 12vw;
+  margin-top: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
