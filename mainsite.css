@@ -94,48 +94,14 @@
   gap: 12vw;
 }
 
-.container .breakfast {
-  width: 85vw;
-  height: 9vw;
-  background-color: #202020;
-  margin-top: 10vw;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  color: #ffff;
-  padding-top: 9px;
-  font-size: 5vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  letter-spacing: 1.5px;
-}
-
-.container .lunch {
-  width: 85vw;
-  height: 9vw;
-  background-color: #202020;
-  margin-top: 1vw;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  color: #ffff;
-  padding-top: 9px;
-  font-size: 5vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  letter-spacing: 1.5px;
-}
-
-.container .dinner {
-  width: 85vw;
-  height: 9vw;
-  background-color: #202020;
-  margin-top: 1vw;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  color: #ffff;
-  padding-top: 9px;
+.container .page_title {
+  margin-top: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 5vw;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
@@ -168,7 +134,7 @@
 }
 
 .page_title {
-  margin-top: 20vw;
+  margin-top: 12vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
