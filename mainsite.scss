@@ -44,8 +44,7 @@ left: 0;
         position:unset;
         scale: 20px;
         margin-left: 25px;
-
-
+        
     }
     .favorites{
         position:unset;
@@ -77,14 +76,13 @@ $button-text-color: #ffff;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 120px;
-  
+    gap: 12vw;
     
     .breakfast {
         width: 85vw;
         height: 9vw;
         background-color: $button-color;
-        margin-top: 18vw;
+        margin-top: 10vw;
         border: none;
         border-radius: 999px;
         cursor: pointer;
@@ -154,7 +152,7 @@ $button-text-color: #ffff;
 
 
 .page_title{
-    margin-top: 100px;
+    margin-top: 12vw;
     display: flex;
     justify-content: center;
     font-size: 5vw;
