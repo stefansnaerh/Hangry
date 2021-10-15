@@ -6,23 +6,16 @@ body {
 }
 
 .home-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .backgroundImage {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  filter: brightness(50%);
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
@@ -33,7 +26,6 @@ body {
 }
 
 .logo {
-<<<<<<< HEAD
   position: absolute;
   width: 315.14px;
   height: 210.04px;
@@ -41,13 +33,6 @@ body {
   top: 18%;
   transform: translate(-28%, -20%);
   -ms-transform: translate(-50%, -50%);
-=======
-  width: 315vw;
-  height: 210vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> b0d0fd1d9809c5e556c20593836dd37b21fa0079
 }
 
 h2 {
@@ -106,12 +91,12 @@ h2 {
 }
 .homeButton {
   position: absolute;
+  line-height: 37px;
   top: 80%;
   left: 50%;
   width: 247px;
   height: 71px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #202020;
   color: white;
@@ -121,13 +106,6 @@ h2 {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-<<<<<<< HEAD
   border: 1px solid #ffffff;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
-=======
-  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-}
-/*# sourceMappingURL=index.css.map */
->>>>>>> b0d0fd1d9809c5e556c20593836dd37b21fa0079
