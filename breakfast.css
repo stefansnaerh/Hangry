@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #202020;
-  height: 100px;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 330px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202020;
+  width: 100vw;
+  max-height: 20vw;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 1;
 }
 
 .banner .bannerimage {
+  position: relative;
   width: 20vw;
   margin-top: 10px;
   margin-left: 20px;
@@ -28,10 +38,11 @@
   width: 7vw;
   height: auto;
   margin-right: 25px;
+  float: right;
 }
 
 .page_title_breakfast {
-  margin-top: 80px;
+  margin-top: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,13 +60,13 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .container_breakfast .starButton {
@@ -107,38 +118,31 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #202020;
   width: 100vw;
   height: 100px;
+  padding: 10px 10%;
   position: fixed;
   bottom: 0;
   left: 0;
 }
 
 .footer .home {
-  width: 7vw;
   height: auto;
-  position: unset;
-  scale: 20px;
-  margin-left: 25px;
 }
 
 .footer .favorites {
-  position: unset;
-  width: 6vw;
   height: auto;
 }
 
 .footer .shoppinglist {
-  position: unset;
-  width: 7vw;
   height: auto;
 }
 
 .footer .community {
-  position: unset;
-  width: 7vw;
   height: auto;
-  margin-right: 25px;
 }
 /*# sourceMappingURL=breakfast.css.map */

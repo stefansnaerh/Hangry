@@ -1,17 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .banner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #202020;
-  height: 100px;
   width: 100vw;
+  max-height: 20vw;
   position: fixed;
   left: 0;
   top: 0;
-  justify-content: space-between;
-  gap: 330px;
-  z-index: 1; // annars fara myndirnar yfir banner
+  z-index: 1;       // annars fara myndirnar yfir banner
   .bannerimage {
+    position: relative;
     width: 20vw;
     margin-top: 10px;
     margin-left: 20px;
@@ -21,10 +29,11 @@
     width: 7vw;
     height: auto;
     margin-right: 25px;
+    float: right;
   }
 }
 .page_title_breakfast {
-  margin-top: 80px;
+  margin-top: 20vw;
   display: flex;
   justify-content: center;
   font-size: 5vw;
@@ -36,9 +45,9 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  justify-content: space-evenly; //eða center ?
+  justify-content: center; //eða center ?
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   .starButton {
     //stjörnu takki
     position: absolute;
@@ -85,34 +94,25 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #202020;
   width: 100vw;
   height: 100px;
+  padding: 10px 10%;
   position: fixed;
   bottom: 0;
   left: 0;
   .home {
-    width: 7vw;
     height: auto;
-    position: unset;
-    scale: 20px;
-    margin-left: 25px;
   }
   .favorites {
-    position: unset;
-    width: 6vw;
     height: auto;
   }
   .shoppinglist {
-    position: unset;
-    width: 7vw;
     height: auto;
   }
   .community {
-    position: unset;
-    width: 7vw;
     height: auto;
-    margin-right: 25px;
   }
 }
 
