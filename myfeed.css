@@ -2,26 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900");
-
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-
-
-@media only screen and (min-width: 476px) {
-  h2 {
-    left: 40%;
-  }
-  .logo {
-    left: 40%;
-  }
-}
-
 
 .banner {
   display: -webkit-box;
@@ -78,11 +64,6 @@
 
 .footer .home {
   height: auto;
-
-  position: unset;
-  scale: 20px;
-  margin-left: 25px;
-
 }
 
 .footer .favorites {
@@ -95,18 +76,6 @@
 
 .footer .community {
   height: auto;
-}
-
-@media only screen and (min-width: 476px) {
-  #mobile-footer {
-    display: none;
-  }
-  .banner {
-    display: none;
-  }
-  .home {
-    display: none;
-  }
 }
 
 .container {
@@ -137,7 +106,7 @@
   color: #ffff;
   padding-top: 9px;
   font-size: 5vw;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   letter-spacing: 1.5px;
 }
@@ -153,7 +122,7 @@
   color: #ffff;
   padding-top: 9px;
   font-size: 5vw;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   letter-spacing: 1.5px;
 }
@@ -169,7 +138,7 @@
   color: #ffff;
   padding-top: 9px;
   font-size: 5vw;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   letter-spacing: 1.5px;
 }
@@ -186,7 +155,7 @@
   color: #ffff;
   padding-top: 9px;
   font-size: 5vw;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   letter-spacing: 1.5px;
 }
@@ -210,4 +179,4 @@
   font-size: 5vw;
   font-family: lobster;
 }
-/*# sourceMappingURL=mainsite.css.map */
+/*# sourceMappingURL=myfeed.css.map */

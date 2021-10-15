@@ -1,5 +1,7 @@
 // $(window).load(function() {    
 
+const { src } = require("vinyl-fs");
+
 // 	var theWindow        = $(window),
 // 	    $bg              = $("#bg"),
 // 	    aspectRatio      = $bg.width() / $bg.height();
