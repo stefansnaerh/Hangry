@@ -4,158 +4,150 @@
 
 //.banner & .footer is the navbar
 .banner {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #202020;
-width: 100vw;
-max-height: 20vw;
-position: fixed; 
-left: 0;
-top: 0;
-        .bannerimage{
-            position: relative;
-            width: 20vw;
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-        .usernameicon{
-            position: unset;
-            width: 7vw;
-            height: auto;
-            margin-right: 25px;
-            float: right;
-        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  width: 100vw;
+  max-height: 20vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .bannerimage {
+    position: relative;
+    width: 20vw;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .usernameicon {
+    position: unset;
+    width: 7vw;
+    height: auto;
+    margin-right: 25px;
+    float: right;
+  }
 }
 
 .footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #202020;
-width: 100vw;
-height: 100px;
-position: fixed;
-bottom: 0;
-left: 0;
-    .home{
-        width: 7vw;
-        height: auto;
-        position:unset;
-        scale: 20px;
-        margin-left: 25px;
-        
-    }
-    .favorites{
-        position:unset;
-        width: 6vw;
-        height: auto;
-
-
-    }
-    .shoppinglist{
-        position: unset;
-        width: 7vw;
-        height: auto;
-
-
-    }
-    .community{
-        position: unset;
-        width: 7vw;
-        height: auto;
-        margin-right: 25px;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .home {
+    width: 7vw;
+    height: auto;
+    position: unset;
+    scale: 20px;
+    margin-left: 25px;
+  }
+  .favorites {
+    position: unset;
+    width: 6vw;
+    height: auto;
+  }
+  .shoppinglist {
+    position: unset;
+    width: 7vw;
+    height: auto;
+  }
+  .community {
+    position: unset;
+    width: 7vw;
+    height: auto;
+    margin-right: 25px;
+  }
 }
 
 $button-color: #202020;
 $button-text-color: #ffff;
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 12vw;
-    
-    .breakfast {
-        width: 85vw;
-        height: 9vw;
-        background-color: $button-color;
-        margin-top: 10vw;
-        border: none;
-        border-radius: 999px;
-        cursor: pointer;
-        color: $button-text-color;
-        padding-top: 9px;
-        font-size: 5vw;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-        letter-spacing: 1.5px;
-        }
-    .lunch {
-        width: 85vw;
-        height: 9vw;
-        background-color: $button-color;
-        margin-top: 1vw;
-        border: none;
-        border-radius: 999px;
-        cursor: pointer;
-        color: $button-text-color;
-        padding-top: 9px;
-        font-size: 5vw;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-        letter-spacing: 1.5px;
-    }
-    .dinner {
-        width: 85vw;
-        height: 9vw;
-        background-color: $button-color;
-        margin-top: 1vw;
-        border: none;
-        border-radius: 999px;
-        cursor: pointer;
-        color: $button-text-color;
-        padding-top: 9px;
-        font-size: 5vw;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-        letter-spacing: 1.5px;
-    }
-    .desserts {
-        width: 85vw;
-        height: 9vw;
-        background-color: $button-color;
-        margin-top: 1vw;
-        border: none;
-        border-radius: 999px;
-        cursor: pointer;
-        margin-bottom: 25vw;
-        color: $button-text-color;
-        padding-top: 9px;
-        font-size: 5vw;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-        letter-spacing: 1.5px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12vw;
 
-    .Button_images{
-        position: relative;
-        float: left;
-        margin-top: -6vw;
-        margin-left: -2vw;
-        width: 20vw;
-    }
-}
-
-
-
-.page_title{
-    margin-top: 12vw;
-    display: flex;
-    justify-content: center;
+  .breakfast {
+    width: 85vw;
+    height: 9vw;
+    background-color: $button-color;
+    margin-top: 10vw;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    color: $button-text-color;
+    padding-top: 9px;
     font-size: 5vw;
-    font-family: lobster;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+  }
+  .lunch {
+    width: 85vw;
+    height: 9vw;
+    background-color: $button-color;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    color: $button-text-color;
+    padding-top: 9px;
+    font-size: 5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+  }
+  .dinner {
+    width: 85vw;
+    height: 9vw;
+    background-color: $button-color;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    color: $button-text-color;
+    padding-top: 9px;
+    font-size: 5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+  }
+  .desserts {
+    width: 85vw;
+    height: 9vw;
+    background-color: $button-color;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-bottom: 25vw;
+    color: $button-text-color;
+    padding-top: 9px;
+    font-size: 5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+  }
+
+  .Button_images {
+    position: relative;
+    float: left;
+    margin-top: -6vw;
+    margin-left: -2vw;
+    width: 20vw;
+  }
 }
 
+.page_title {
+  margin-top: 12vw;
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  font-family: lobster;
+}
