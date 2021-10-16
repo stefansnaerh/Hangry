@@ -21,26 +21,27 @@
           align-items: center;
   background-color: #202020;
   width: 103vw;
+  height: 100px;
   max-height: 25vw;
   position: fixed;
   left: 0;
   top: 0;
 }
 
-.banner .bannerimage {
-  position: relative;
-  width: 25vw;
-  padding: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.banner .usernameicon {
+.usernameicon {
   position: unset;
   width: 7vw;
   height: auto;
   margin-right: 25px;
   float: right;
+}
+
+.bannerimage {
+  position: relative;
+  width: 25vw;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .footer {
@@ -76,6 +77,19 @@
 
 .footer .community {
   height: auto;
+}
+
+@media only screen and (min-width: 480px) {
+  .banner {
+    height: 12%;
+  }
+  .bannerimage {
+    width: 130px;
+  }
+  .usernameicon {
+    width: 30px;
+    margin-right: 5%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {

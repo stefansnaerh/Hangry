@@ -15,24 +15,25 @@
   align-items: center;
   background-color: #202020;
   width: 103vw;
+  height: 100px;
   max-height: 25vw;
   position: fixed;
   left: 0;
   top: 0;
-  .bannerimage {
-    position: relative;
-    width: 25vw;
-    padding: 5px;
-    margin-top: 5px;
-    margin-left: 20px;
-  }
-  .usernameicon {
-    position: unset;
-    width: 7vw;
-    height: auto;
-    margin-right: 25px;
-    float: right;
-  }
+}
+.usernameicon {
+  position: unset;
+  width: 7vw;
+  height: auto;
+  margin-right: 25px;
+  float: right;
+}
+.bannerimage {
+  position: relative;
+  width: 25vw;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .footer {
@@ -59,6 +60,20 @@
     height: auto;
   }
 }
+// making mobile content scale better on bigger screens
+@media only screen and (min-width: 480px) {
+  .banner {
+    height: 12%;
+  }
+  .bannerimage {
+    width: 130px;
+  }
+  .usernameicon {
+    width: 30px;
+    margin-right: 5%;
+  }
+}
+
 //making mobile header and footer disappear on bigger screens
 @media only screen and (min-width: 1025px) {
   #mobile-footer {
@@ -123,15 +138,6 @@ $button-text-color: #ffff;
   align-items: center;
   flex-direction: column;
   gap: 12vw;
-
-  // @media only screen and (min-width: 576px) {
-  //   #mobile-footer {
-  //     display: none;
-  //   }
-  //   #mobile-banner {
-  //     display: none;
-  //   }
-  // }
 
   .breakfast {
     width: 85vw;
