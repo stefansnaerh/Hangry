@@ -63,16 +63,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: row;
+      -ms-flex-align: row;
+          align-items: row;
   gap: 20px;
 }
 
 .container_breakfast .starButton {
   position: absolute;
-  top: 25px;
-  left: 150px;
+  top: 28px;
+  left: 115px;
   cursor: pointer;
 }
 
@@ -93,10 +93,10 @@
 .container_breakfast .text {
   position: absolute;
   top: 230px;
-  left: 28px;
   font-family: sans-serif;
+  font-size: 14px;
   text-align: center;
-  padding: 8px 13px 13px 8px;
+  padding: 10px 20px 10px 20px;
   background-color: white;
   background-size: cover;
   max-width: 35ch;
