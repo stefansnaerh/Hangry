@@ -8,15 +8,6 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 476px) {
-  h2 {
-    left: 40%;
-  }
-  .logo {
-    left: 40%;
-  }
-}
-
 //.banner & .footer is the navbar
 .banner {
   display: flex;
@@ -69,13 +60,58 @@
   }
 }
 //making mobile header and footer disappear on bigger screens
-@media only screen and (min-width: 476px) {
+@media only screen and (min-width: 1025px) {
   #mobile-footer {
     display: none;
   }
   #mobile-banner {
     display: none;
   }
+}
+
+// making website header appear when screen gets bigger / disappear when smaller
+@media only screen and (max-width: 1025px) {
+  #website-banner {
+    display: none;
+  }
+}
+// ------- CSS for sidebar -------------
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: #202020;
+  padding: 6px 14px;
+}
+.website-logo {
+  margin-top: 25px;
+  width: 80%;
+  padding-left: 40px;
+}
+.sidebar ul {
+  margin-top: 50px;
+}
+.sidebar ul li {
+  height: 70px;
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  text-decoration: none;
+}
+.sidebar-icons {
+  width: 18%;
+  padding-right: 10px;
 }
 
 $button-color: #202020;
@@ -87,6 +123,15 @@ $button-text-color: #ffff;
   align-items: center;
   flex-direction: column;
   gap: 12vw;
+
+  // @media only screen and (min-width: 576px) {
+  //   #mobile-footer {
+  //     display: none;
+  //   }
+  //   #mobile-banner {
+  //     display: none;
+  //   }
+  // }
 
   .breakfast {
     width: 85vw;
