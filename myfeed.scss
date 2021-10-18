@@ -135,7 +135,16 @@
 .links_name:hover {
   border-bottom: 3px solid #ffc703;
 }
-//Using the Sass variable function to set backroundcolor and of all buttons
+// .sidebar ul li a:hover {
+//   border-bottom: 2px solid #ffff;
+//   width: 80px;
+// }
+// @media only screen and (max-width: 1300px) {
+//   .sidebar {
+//     width: 250px;
+//   }
+// }
+
 $button-color: #202020;
 $button-text-color: #ffff;
 
@@ -253,31 +262,24 @@ $button-text-color: #ffff;
       margin-top: 0px;
       margin-left: 250px;
     }
-    .arrow {
-      position: relative;
-      float: right;
-      margin-right: 3vw;
-      margin-top: 1vw;
-      width: 2vw;
-    }
   }
+}
 
+.page_title {
+  margin-top: 25vw;
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  font-family: lobster;
+}
+// making title scale on screen bigger then 1024px
+@media only screen and (min-width: 1100px) {
   .page_title {
-    margin-top: 25vw;
-    display: flex;
-    justify-content: center;
-    font-size: 5vw;
-    font-family: lobster;
+    font-size: 36px;
+    margin-top: 25px;
+    margin-left: 300px;
   }
-  // making title scale on screen bigger then 1024px
-  @media only screen and (min-width: 1100px) {
-    .page_title {
-      font-size: 36px;
-      margin-top: 25px;
-      margin-left: 300px;
-    }
-    .container {
-      gap: 120px;
-    }
+  .container {
+    gap: 120px;
   }
 }
