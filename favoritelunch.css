@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202020;
+  width: 100vw;
+  height: 100px;
+  max-height: 20vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.banner .bannerimage {
+  position: relative;
+  width: 20vw;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.banner .usernameicon {
+  position: unset;
+  width: 7vw;
+  height: auto;
+  margin-right: 25px;
+  float: right;
+}
+
+.page_title_breakfast {
+  margin-top: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5vw;
+  font-family: lobster;
+}
+
+.container_breakfast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: row;
+      -ms-flex-align: row;
+          align-items: row;
+  gap: 20px;
+}
+
+.container_breakfast .starButton {
+  position: absolute;
+  top: 28px;
+  left: 115px;
+  cursor: pointer;
+}
+
+.container_breakfast .cardImage, .container_breakfast .cardImage1, .container_breakfast .cardImage2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.container_breakfast .cardImage1, .container_breakfast .cardImage2 {
+  margin-bottom: 150px;
+}
+
+.container_breakfast .cardImage:hover {
+  opacity: 0.5;
+}
+
+.container_breakfast .text {
+  position: absolute;
+  top: 230px;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  background-size: cover;
+  max-width: 35ch;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 3px #aaaa;
+          box-shadow: 2px 3px #aaaa;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202020;
+  width: 100vw;
+  height: 100px;
+  padding: 10px 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .home {
+  height: auto;
+}
+
+.footer .favorites {
+  height: auto;
+}
+
+.footer .shoppinglist {
+  height: auto;
+}
+
+.footer .community {
+  height: auto;
+}
+/*# sourceMappingURL=favoritelunch.css.map */

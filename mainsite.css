@@ -9,15 +9,6 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 476px) {
-  h2 {
-    left: 40%;
-  }
-  .logo {
-    left: 40%;
-  }
-}
-
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,26 +21,27 @@
           align-items: center;
   background-color: #202020;
   width: 103vw;
+  height: 100px;
   max-height: 25vw;
   position: fixed;
   left: 0;
   top: 0;
 }
 
-.banner .bannerimage {
-  position: relative;
-  width: 25vw;
-  padding: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.banner .usernameicon {
+.usernameicon {
   position: unset;
   width: 7vw;
   height: auto;
   margin-right: 25px;
   float: right;
+}
+
+.bannerimage {
+  position: relative;
+  width: 25vw;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .footer {
@@ -87,13 +79,88 @@
   height: auto;
 }
 
-@media only screen and (min-width: 476px) {
+@media only screen and (min-width: 480px) {
+  .banner {
+    height: 12%;
+  }
+  .bannerimage {
+    width: 130px;
+  }
+  .usernameicon {
+    width: 30px;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
   #mobile-footer {
     display: none;
   }
   #mobile-banner {
     display: none;
   }
+}
+
+@media only screen and (max-width: 1100px) {
+  #website-banner {
+    display: none;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: #202020;
+  padding: 6px 14px;
+}
+
+.website-logo {
+  margin-top: 25px;
+  width: 80%;
+  padding-left: 40px;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+}
+
+.sidebar ul li {
+  height: 70px;
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.sidebar-icons {
+  width: 18%;
+  padding-right: 12px;
+  margin-right: 12px;
+}
+
+.links_name {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.links_name:hover {
+  border-bottom: 3px solid #ffc703;
 }
 
 .container {
@@ -186,6 +253,45 @@
   width: 20vw;
 }
 
+@media only screen and (min-width: 1100px) {
+  .container .Button_images {
+    width: 110px;
+    margin-top: -25px;
+  }
+  .container .desserts {
+    width: 650px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 250px;
+  }
+  .container .lunch {
+    width: 650px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 250px;
+  }
+  .container .breakfast {
+    width: 650px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 56px;
+    margin-left: 250px;
+  }
+  .container .dinner {
+    width: 650px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 250px;
+  }
+}
+
 .page_title {
   margin-top: 25vw;
   display: -webkit-box;
@@ -196,5 +302,16 @@
           justify-content: center;
   font-size: 5vw;
   font-family: lobster;
+}
+
+@media only screen and (min-width: 1100px) {
+  .page_title {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+  .container {
+    gap: 120px;
+  }
 }
 /*# sourceMappingURL=mainsite.css.map */

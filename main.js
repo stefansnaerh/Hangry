@@ -1,28 +1,4 @@
-// $(window).load(function() {    
 
-const { src } = require("vinyl-fs");
-
-// 	var theWindow        = $(window),
-// 	    $bg              = $("#bg"),
-// 	    aspectRatio      = $bg.width() / $bg.height();
-	    			    		
-// 	function resizeBg() {
-		
-// 		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-// 		    $bg
-// 		    	.removeClass()
-// 		    	.addClass('bgheight');
-// 		} else {
-// 		    $bg
-// 		    	.removeClass()
-// 		    	.addClass('bgwidth');
-// 		}
-					
-// 	}
-	                   			
-// 	theWindow.resize(resizeBg).trigger("resize");
-
-// });
 // let h2 = document.querySelector('h2')
 // let classes = (classes) => document.getElementsByClassName (classes);
 
@@ -48,3 +24,8 @@ const { src } = require("vinyl-fs");
 
 
 // time();
+
+// let currenTime = new Date().getHours();
+// if (currenTime < 10) {
+//     document.
+// };
