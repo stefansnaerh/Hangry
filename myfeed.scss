@@ -62,7 +62,7 @@ left: 0;
         height: auto;
     }
 }
-//Using the Sass variable function to set backroundcolor and color of all buttons
+//Using the Sass variable function to set backroundcolor and of all buttons
 $button-color: #202020;
 $button-text-color: #ffff;
 
@@ -141,6 +141,14 @@ $button-text-color: #ffff;
         margin-top: -6vw;
         margin-left: -2vw;
         width: 20vw;
+    }
+    .arrow {
+        position: relative;
+        float: right;
+        margin-right: 3vw;
+        margin-top: 1vw;
+        width: 2vw;
+
     }
 }
 
