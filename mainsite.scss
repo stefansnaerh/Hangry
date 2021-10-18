@@ -75,7 +75,7 @@
 }
 
 //making mobile header and footer disappear on bigger screens
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1100px) {
   #mobile-footer {
     display: none;
   }
@@ -85,7 +85,7 @@
 }
 
 // making website header appear when screen gets bigger / disappear when smaller
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1100px) {
   #website-banner {
     display: none;
   }
@@ -126,8 +126,24 @@
 }
 .sidebar-icons {
   width: 18%;
-  padding-right: 10px;
+  padding-right: 12px;
+  margin-right: 12px;
 }
+.links_name {
+  transition: 0.2s ease-in-out;
+}
+.links_name:hover {
+  border-bottom: 3px solid #ffc703;
+}
+// .sidebar ul li a:hover {
+//   border-bottom: 2px solid #ffff;
+//   width: 80px;
+// }
+// @media only screen and (max-width: 1300px) {
+//   .sidebar {
+//     width: 250px;
+//   }
+// }
 
 $button-color: #202020;
 $button-text-color: #ffff;
@@ -208,6 +224,45 @@ $button-text-color: #ffff;
     margin-left: -2vw;
     width: 20vw;
   }
+  // making container elements scale better on bigger screens
+  @media only screen and (min-width: 1100px) {
+    .Button_images {
+      width: 110px;
+      margin-top: -25px;
+    }
+    .desserts {
+      width: 650px;
+      height: 60px;
+      font-size: 40px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 250px;
+    }
+    .lunch {
+      width: 650px;
+      height: 60px;
+      font-size: 40px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 250px;
+    }
+    .breakfast {
+      width: 650px;
+      height: 60px;
+      font-size: 40px;
+      margin-bottom: 0px;
+      margin-top: 56px;
+      margin-left: 250px;
+    }
+    .dinner {
+      width: 650px;
+      height: 60px;
+      font-size: 40px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 250px;
+    }
+  }
 }
 
 .page_title {
@@ -216,4 +271,15 @@ $button-text-color: #ffff;
   justify-content: center;
   font-size: 5vw;
   font-family: lobster;
+}
+// making title scale on screen bigger then 1024px
+@media only screen and (min-width: 1100px) {
+  .page_title {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+  .container {
+    gap: 120px;
+  }
 }
