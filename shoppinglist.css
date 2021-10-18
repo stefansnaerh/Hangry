@@ -9,9 +9,15 @@ body {
 h1 {
   font-family: lobster;
   font-size: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-aside {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,44 +31,93 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 100;
-  gap: 30px;
 }
 
-aside button {
+.container #newItem {
+  padding: 30px 20px;
+}
+
+.container #newItem input {
+  width: 50vw;
+  height: 5vw;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 2px solid #FFC703;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container #newItem input:focus {
+  outline: none;
+  background-color: #ffc8031c;
+}
+
+.container #newItem button {
+  border-radius: 999px;
   border: none;
+  width: 15vw;
+  height: 5vw;
   background-color: #202020;
   color: white;
-  width: 25vw;
-  height: 5vw;
-  border-radius: 999px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+  cursor: pointer;
 }
 
-aside button:hover {
+.container #newItem button:hover {
   background-color: #FFC703;
   color: black;
 }
 
-aside .input1 {
-  width: 50vw;
-  height: 5vw;
+.container #items {
+  position: relative;
   border-radius: 10px;
-  border: 2px solid #FFC703;
-  margin-right: 0px;
+  margin-top: 20px;
+  width: 65vw;
 }
 
-aside input {
-  width: 3vw;
-  height: 3vw;
-  margin-right: 20px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+.container .item {
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
-span {
-  font-size: 5vw;
+.container .item span {
+  font-family: roboto;
+  font-size: 4vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container .item button {
+  background-color: #202020;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 6vw;
+  height: 70%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container .item button:hover {
+  background-color: #FFC703;
+  color: black;
+  cursor: pointer;
+}
+
+.container .completed {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=shoppinglist.css.map */

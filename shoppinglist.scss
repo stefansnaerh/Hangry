@@ -10,48 +10,95 @@ body{
 h1{
     font-family: lobster;
     font-size: 10vw;
+    display: flex;
+    justify-content: center;
 }
 
-aside{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 100;
-    gap: 30px;
 
 
-button{
-    border: none;
-    background-color: #202020;
-    color: white;
-    width: 25vw;
-    height: 5vw;
-    border-radius: 999px;
-    transition: 0.5s ease-in-out;
-}
+    #newItem {
+        padding: 30px 20px;
+    }
 
-button:hover{
-    background-color:#FFC703 ;
-    color: black;
-}
+    #newItem input{
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+        padding-left: 15px;
+        border: 2px solid #FFC703;
+        transition: 0.3s ease-in-out;
 
-.input1{
-    width: 50vw;
-    height: 5vw;
-    border-radius: 10px;
-    border: 2px solid #FFC703;
-    margin-right:0px
-}
-input{
-    width: 3vw;
-    height: 3vw;
-    margin-right: 20px;
-    justify-content: left;
-}
+    }
 
-}
+    #newItem input:focus{
+        outline: none;
+        background-color: #ffc8031c;
+    }
 
-span{
-    font-size: 5vw;
+    #newItem button{
+        border-radius: 999px;
+        border: none;
+        width: 15vw;
+        height: 5vw;
+        background-color: #202020;
+        color: white;
+        transition: 0.3s ease-in-out;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    #newItem button:hover{
+        background-color: #FFC703;
+        color: black;
+    }
+
+    #items{
+        position: relative;
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 65vw;
+    }
+
+    .item{
+        height: 50px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    .item span{
+        font-family: roboto;
+        font-size: 4vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .item button{
+        background-color: #202020;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        width: 6vw;
+        height: 70%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .item button:hover{
+        background-color: #FFC703;
+        color: black;
+        cursor: pointer;
+    }
+
+    .completed{
+        text-decoration: line-through;
+        
+    }
 }
