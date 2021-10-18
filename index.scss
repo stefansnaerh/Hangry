@@ -22,10 +22,12 @@ body {
   height: auto;
 
   /* Set up positioning */
-  position: fixed;
+  position: absolute;
+  display: none;
   top: 0;
   left: 0;
 }
+
 // .backgroundImageLunch {
 //   /* Set rules to fill background */
 //   min-height: 100%;
@@ -35,10 +37,10 @@ body {
 //   /* Set up proportionate scaling */
 //   width: 100%;
 //   height: auto;
-//   opacity: 0;
+//   display: none;
 
 //   /* Set up positioning */
-//   position: fixed;
+//   position: absolute;
 //   top: 0;
 //   left: 0;
 // }
@@ -52,10 +54,10 @@ body {
 //   /* Set up proportionate scaling */
 //   width: 100%;
 //   height: auto;
-//   opacity: 0;
+//   display: none;
 
 //   /* Set up positioning */
-//   position: fixed;
+//   position: absolute;
 //   top: 0;
 //   left: 0;
 // }

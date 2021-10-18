@@ -27,7 +27,8 @@ body {
   width: 100%;
   height: auto;
   /* Set up positioning */
-  position: fixed;
+  position: absolute;
+  display: none;
   top: 0;
   left: 0;
 }
