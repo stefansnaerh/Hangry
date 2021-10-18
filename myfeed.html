@@ -4,46 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Feed</title>
-    <link rel="stylesheet" href="myfeed.css">
+    <title>Main Site</title>
+    <link rel="stylesheet" href="mainsite.css">
 </head>
 <body>
-    <header class="banner" role="banner">
-        <img src="images/Logo.svg" class="bannerimage" alt="">
-        <input type="image" src="images/usernameicon.svg" class="usernameicon" alt="">
-    </header>
-    
-        <div class="page_title"><h1>My feed</h1></div>
-    
-    
-    
-    <div> 
-        <div class="container">
-            <button class="breakfast buttons"> Breakfast
-                <img class="Button_images" src="images/breakfastButton.png" alt="Breakfast">
-            </button>
-    
-            <button class="lunch buttons"> Lunch
-                <img class="Button_images" src="images/lunchButton.png" alt="Lunch">
-            </button>
-    
-            <button class="dinner buttons"> Dinner
-                <img class="Button_images" src="images/dinnerButton.png" alt="Dinner">
-            </button>
-    
-            <button class="desserts buttons"> Dessert
-                <img class="Button_images" src="images/dessertsButton.png" alt="Desserts">
-            </button> 
-        </div>
+    <div id="mobile-banner">
+<header class="banner" role="banner">
+    <img src="images/Logo.svg" class="bannerimage" alt="" id="mobileLogo">
+    <input type="image" src="images/usernameicon.svg" class="usernameicon" alt="">
+</header>
+</div>
+<div id="website-banner" class="sidebar">
+       <div class="logo">
+           <img src="images/Logo.svg" alt="" class="website-logo">
+       </div>
+       <ul class="nav_list_top">
+           <li>
+               <a href="#">
+                   <img src="images/homeicon.svg" alt="" class="sidebar-icons">
+                   <span class="links_name">HOME</span>
+               </a>
+               <!--<span class="tooltip">Home</span>-->
+           </li>
+           <li>
+            <a href="#" class="nav-links">
+                <img src="images/favoritesicon.svg" alt="" class="sidebar-icons">
+                <span class="links_name">FAVORITES</span>
+            </a>
+            <!--<span class="tooltip">Home</span>-->
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/communityicon.svg" alt="" class="sidebar-icons">
+                <span class="links_name">COMMUNITY</span>
+            </a>
+            <!--<span class="tooltip">Home</span>-->
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/shoppinglisticon.svg" alt="" class="sidebar-icons">
+                <span class="links_name">SHOPPING LIST</span>
+            </a>
+            <!--<span class="tooltip">Home</span>-->
+        </li>
+       </ul>
+       <ul class="nav_list_bottom">
+           <li>
+               <a href="#">
+                   <img src="images/usernameicon.svg" alt="" class="sidebar-icons">
+                   <span class="links_name">SIGN IN</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="images/settingsicon.svg" alt="" class="sidebar-icons">
+                   <span class="links_name">SETTINGS</span>
+               </a>
+           </li>
+       </ul>
+</div>
+
+
+    <div class="page_title"><h1>My Feed</h1></div>
+
+
+
+<div> 
+    <div class="container">
+        <button class="breakfast buttons"> Breakfast
+            <img class="Button_images" src="images/breakfastButton.png" alt="Breakfast">
+        </button>
+
+        <button class="lunch buttons"> Lunch
+            <img class="Button_images" src="images/lunchButton.png" alt="Lunch">
+        </button>
+
+        <button class="dinner buttons"> Dinner
+            <img class="Button_images" src="images/dinnerButton.png" alt="Dinner">
+        </button>
+
+        <button class="desserts buttons"> Dessert
+            <img class="Button_images" src="images/dessertsButton.png" alt="Desserts">
+        </button> 
     </div>
-    
-        
-    <footer class="footer" role="contentinfo">
-        <a href="#" class="home"><input type="image" src="images/homeicon.svg" class="home"></a>
-        <a href="#" class="favorites"><input type="image" src="images/favoritesicon.svg" class="favorites"></a>
-        <a href="#" class="shoppinglist"><input type="image" src="images/shoppinglisticon.svg" class= "shoppinglist"></a>
-       <!--Changing out the icon for the same icon in yellow--> <a href="#" class="community"><input type="image" src="images/communityiconyellow.svg" class="community"></a>
-    </footer> 
-    
+</div>
+
+<div id="mobile-footer">
+<footer class="footer" role="contentinfo">
+    <a href="#" class="home"><input type="image" src="images/homeicon.svg" class="home"></a>
+    <a href="#" class="favorites"><input type="image" src="images/favoritesicon.svg" class="favorites"></a>
+    <a href="#" class="shoppinglist"><input type="image" src="images/shoppinglisticon.svg" class= "shoppinglist"></a>
+    <a href="#" class="community"><input type="image" src="images/communityiconyellow.svg" class="community"></a>
+</footer> 
+</div>
+
 </body>
 </html>
