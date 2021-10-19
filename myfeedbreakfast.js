@@ -1,16 +1,10 @@
-let classes = (classes) => document.getElementsByClassName(classes);
 
-let cards = classes(".container_breakfast"),
-favButton = classes(".starButton");
+const starButton = document.querySelector(".starButtonFav");
+const unclicked = document.querySelector(".starOff");
+const clicked = document.querySelector(".starOn");
 
-favButton.addEventListener("click", (e)=>{
+starButton[0].addEventListener("click", (e)=>{
     e.preventDefault();
-    localStorage.setItem("cards", 
-                        ` <img class="starButton" src="images/myfeedlike.png" alt="star_rate_button">
-                        <a href="#"> <img class="cardImage" src="images/pic3.png" alt="breakfast_card1"></a>
-                        <card class="text">
-                            <h4>Salmon salad</h4>
-                            <p>20 min  |  200 kcal</p>
-                        </card> `)
-    star[0].style.backgroundcolor = "#FFF4CD";
+    clicked[0].style.display = "initial";
+    unclicked[0].style.display = "none";
   })
