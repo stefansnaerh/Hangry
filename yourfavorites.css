@@ -253,6 +253,14 @@
   width: 20vw;
 }
 
+.container .buttonArrow {
+  width: 2.5%;
+  float: right;
+  margin-right: 3%;
+  line-height: 1%;
+  margin-top: 1%;
+}
+
 @media only screen and (min-width: 1100px) {
   .container .Button_images {
     width: 110px;
