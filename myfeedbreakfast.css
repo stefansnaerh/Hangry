@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -12,11 +12,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #202020;
   width: 100vw;
   height: 100px;
@@ -48,8 +48,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 5vw;
   font-family: lobster;
 }
@@ -59,14 +59,14 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: row;
-  -ms-flex-align: row;
-  align-items: row;
+      -ms-flex-align: row;
+          align-items: row;
   gap: 20px;
 }
 
@@ -75,14 +75,14 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: row;
-  -ms-flex-align: row;
-  align-items: row;
+      -ms-flex-align: row;
+          align-items: row;
   gap: 20px;
 }
 
@@ -103,7 +103,7 @@
   background-color: white;
   border-radius: 9999px;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
-  box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
+          box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
   width: 72px;
   height: 40px;
   color: black;
@@ -114,12 +114,10 @@
   top: 21.5%;
   left: 83%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.containerBreakfast .cardImage,
-.containerBreakfast .cardImage1,
-.containerBreakfast .cardImage2 {
+.containerBreakfast .cardImage, .containerBreakfast .cardImage1, .containerBreakfast .cardImage2 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: -webkit-box;
@@ -129,8 +127,7 @@
   cursor: pointer;
 }
 
-.containerBreakfast .cardImage1,
-.containerBreakfast .cardImage2 {
+.containerBreakfast .cardImage1, .containerBreakfast .cardImage2 {
   margin-bottom: 150px;
 }
 
@@ -151,7 +148,7 @@
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 2px 3px #aaaa;
-  box-shadow: 2px 3px #aaaa;
+          box-shadow: 2px 3px #aaaa;
 }
 
 .footer {
@@ -159,11 +156,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #202020;
   width: 100vw;
   height: 100px;
