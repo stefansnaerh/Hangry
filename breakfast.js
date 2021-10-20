@@ -2,42 +2,38 @@
 // STAR BUTTONS
 //Spurja Smára hvort það sé ekki til betri leið, svo hægt sé að klikka á allar stjörnunar með einum JS kóða.
 
+const likeBtns = document.querySelectorAll(".rounded-button");
+
 // MYND 1
-const likeBtn = document.querySelector("#starButton");
+//const likeBtn = document.querySelector("#starButton"); 
 let likeIcon = document.querySelector("#icon");
-let count = document.querySelector("#count");
-
+//let count = document.querySelector("#count");
+const favorites = []
 //button clicked
-let clicked = false;
+//let clicked = false;
+likeBtns.forEach((likeBtn)=> {
+    likeBtn.addEventListener("click", (e) => {
+        const likeIcon = likeBtn.querySelector("span")
+        console.log (e.target)
+        const clicked = e.target.name==="star"
+        if(!clicked) {
+            favorites.push(likeBtn.parentElement.parentElement)
+            //clicked = true;
+            likeIcon.innerHTML = `<ion-icon name="star" size="large"></ion-icon>`
+            localStorage.setItem("favorites", JSON.stringify(favorites))
+            //count.textContent ++;
+        }
+        else{
+            clicked = false;
+            likeIcon.innerHTML = `<ion-icon name="star-outline" size="large"></ion-icon>`
+            localStorage.removeItem("")
+            //count.textContent --;
+    
+        }
+    });
+}) 
 
-likeBtn.addEventListener("click", (e) => {
-    if(!clicked) {
-        clicked = true;
-        likeIcon.innerHTML = `<ion-icon name="star" size="large"></ion-icon>`
-        localStorage.setItem("card1", `
-            <div class="container_breakfast">
-                <div class="star-container">
-                    <button id="starButton" class="rounded-button" type="button">
-                        <span id="icon"> <ion-icon name="star-outline" size="large"></ion-icon> </span>
-                    </button>
-                </div>
-                    <a href="#"> <img class="cardImage" src="images/chiaYogurt.jpg" alt="breakfast_card1"></a>
-                        <card class="text">
-                            <h4>Chia Yogurt</h4>
-                            <p>8 min  |  179 kcal</p>
-                        </card> 
-            </div>`)
-        count.textContent ++;
-    }
-    else{
-        clicked = false;
-        likeIcon.innerHTML = `<ion-icon name="star-outline" size="large"></ion-icon>`
-        localStorage.removeItem("card1")
-        count.textContent --;
-
-    }
-});
-
+/*
 // MYND 2
 const likeBtn2 = document.querySelector("#starButton2");
 let likeIcon2 = document.querySelector("#icon2");
@@ -136,6 +132,6 @@ likeBtn4.addEventListener("click", () => {
 
     }
 });
-
+*/
 
 
