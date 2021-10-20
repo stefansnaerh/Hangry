@@ -1,16 +1,11 @@
 
 // STAR BUTTONS
-//Spurja Smára hvort það sé ekki til betri leið, svo hægt sé að klikka á allar stjörnunar með einum JS kóða.
-
-const likeBtns = document.querySelectorAll(".rounded-button");
 
 // MYND 1
-//const likeBtn = document.querySelector("#starButton"); 
+const likeBtns = document.querySelectorAll(".rounded-button");
 let likeIcon = document.querySelector("#icon");
-//let count = document.querySelector("#count");
 const favorites = []
-//button clicked
-//let clicked = false;
+
 likeBtns.forEach((likeBtn)=> {
     likeBtn.addEventListener("click", (e) => {
         const likeIcon = likeBtn.querySelector("span")
@@ -34,7 +29,7 @@ likeBtns.forEach((likeBtn)=> {
 }) 
 
 /*
-// MYND 2
+// MYND 2 Gamli kóðinn sem þurfti að setja function á hverja stjörnu.
 const likeBtn2 = document.querySelector("#starButton2");
 let likeIcon2 = document.querySelector("#icon2");
 let count2 = document.querySelector("#count2");
