@@ -23,7 +23,7 @@ document.querySelector("#push").onclick = function
       currentItem[i].onclick = function(){
         this.parentNode.remove();
       }
-      localStorage.setItem("items", itemsDiv.innerHTML)
+      localStorage.removeItem("items", itemsDiv.innerHTML)
     }
 
     let items = document.querySelectorAll(".item");
