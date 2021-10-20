@@ -175,7 +175,6 @@
   border: none;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
           box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
-
   z-index: 1;
   padding: 5px;
   padding-right: 25px;
@@ -185,12 +184,10 @@
 
 .breakfastCards .starOff:hover {
   background-color: #FFF4CD;
-
 }
 
 .breakfastCards .count {
   position: absolute;
-
   padding-left: 35px;
   padding-top: 7px;
   z-index: 3;
@@ -206,7 +203,6 @@
   margin-top: 40px;
   cursor: pointer;
 }
-
 
 .breakfastCards .cardImage:hover {
   -webkit-filter: brightness(50%);
@@ -228,7 +224,6 @@
   height: 52px;
   width: 150px;
   margin-bottom: 200px;
-
 }
 
 .footer {
