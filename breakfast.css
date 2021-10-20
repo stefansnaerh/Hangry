@@ -218,13 +218,13 @@
     display: none;
   }
   .container_breakfast {
-    margin-left: 130px;
+    margin-left: 140px;
     gap: 1px;
   }
   .page_title_breakfast {
-    margin-left: 130px;
+    margin-left: 140px;
     font-size: 36px;
-    margin-top: 10vW;
+    margin-top: 5vW;
   }
 }
 
