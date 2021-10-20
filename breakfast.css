@@ -68,6 +68,7 @@
   -webkit-box-align: row;
       -ms-flex-align: row;
           align-items: row;
+  gap: 25px;
   padding: 10px;
 }
 
