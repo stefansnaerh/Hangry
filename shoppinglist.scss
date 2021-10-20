@@ -215,11 +215,6 @@ h1 {
     border: 2px solid #ffc703;
     transition: 0.3s ease-in-out;
   }  
-  @media only screen and (max-width: 480px) {
-    #newItem input{
-      
-    }
-  }
 
   @media only screen and (min-width: 1100px) {
     #newItem input{
@@ -245,12 +240,6 @@ h1 {
     transition: 0.3s ease-in-out;
     padding: 5px;
     cursor: pointer;
-  }
-
-  @media only screen and (max-width: 480px) {
-    #newItem input{
-      
-    }
   }
 
   @media only screen and (min-width: 1100px) {
