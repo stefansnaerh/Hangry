@@ -1,4 +1,13 @@
+
+
+
+
+
+
+// Here I call out the H2 element i want to change
 let title = document.querySelector("h2") 
+
+
 
 let time = new Date().getHours();
 if (time < 10) {
