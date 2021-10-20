@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* breyta þannig að öll input séu eins */
+
+
+* {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #202020;
+    width: 103vw;
+    height: 100px;
+    max-height: 25vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .usernameicon {
+    position: unset;
+    width: 7vw;
+    height: auto;
+    margin-right: 25px;
+    float: right;
+  }
+  
+  .bannerimage {
+    position: relative;
+    width: 25vw;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+
+body{
+    display: flex;
+    justify-content: center;
+
+    margin:0;
+	padding:0;
+}
+.header{
+    font-family: lobster;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+} 
+
+.addrecipe-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.recipe-title{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 1rem;
+} 
+    .recipe-title label{
+        margin-bottom: 1rem;
+    }
+
+.recipe-type{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1rem;
+}
+    .recipe-type label{
+        margin-bottom: 1rem;
+    }
+
+.boxstyling{
+    width: 30rem;
+    height: 2rem;
+
+    border: 3px solid #FFC703;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}   .boxstyling:focus{ /* f. þegar maður er að skrifa */ 
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}   @media only screen and (max-width: 1100px) {
+        .boxstyling{
+            width: 19rem;
+        }
+    }
+
+.ingredients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ingredients input{
+    background: #FFFFFF;
+    border: 3px solid #FFC703;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+    width: 41.5vw;
+    height: 2rem;
+    margin-bottom: 2.5rem;
+
+    padding-left: 0.5rem;
+}   .ingredients input:focus{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+ .newinput-styled{
+
+    padding-left: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+}
+    .input-container label{
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+.recipe-img{
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imgstyle{
+    background: #FFFFFF;
+    border: 3px solid #FFC703;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+    width: 36vw;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+    padding-left: 0.5rem;
+}   .imgstyle input:focus{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+.stepByStep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 2.5rem;
+}
+
+.sbsitems{
+    display: flex;
+    flex-direction: column;
+}
+
+    .sbsitems label{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+.stepByStep textarea{
+    width: 41.5vw;
+    height: 6.25rem;
+
+    border: 3px solid #FFC703;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 2.5rem;
+} .stepByStep textarea:focus{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+.new-textarea-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* buttons */
+.addbtn-input, .addbtn-textarea{
+    background: #202020;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+
+    width: 6.3rem;
+    height: 2.3rem;
+    border-radius: 9999px;
+
+box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.imgbutton{
+    background: #202020;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+
+    width: 6.3rem;
+    height: 2.3rem;
+    border-radius: 9999px;
+
+box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.submit-button-container{
+    margin-left: 75%;
+    padding-bottom: 1rem;
+}
+    .submit-button{
+        background: #202020;
+        color: #ffffff;
+        border: none;
+        text-align: center; 
+        cursor: pointer;
+
+        width: 10vw;
+        height: 2.3rem;
+        border-radius: 9999px;
+
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    }
+
+    .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: #202020;
+        width: 100vw;
+        height: 100px;
+        padding: 10px 10%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+      
+      .footer .home {
+        height: auto;
+      }
+      
+      .footer .favorites {
+        height: auto;
+      }
+      
+      .footer .shoppinglist {
+        height: auto;
+      }
+      
+      .footer .community {
+        height: auto;
+      }
+      
+      @media only screen and (min-width: 480px) {
+        .banner {
+          height: 12%;
+        }
+        .bannerimage {
+          width: 130px;
+        }
+        .usernameicon {
+          width: 30px;
+          margin-right: 5%;
+        }
+      }
+      
+      @media only screen and (min-width: 1100px) {
+        #mobile-footer {
+          display: none;
+        }
+        #mobile-banner {
+          display: none;
+        }
+      }
+      
+      @media only screen and (max-width: 1100px) {
+        #website-banner {
+          display: none;
+        }
+      }
+      
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 300px;
+        background: #202020;
+        padding: 6px 14px;
+      }
+      
+      .website-logo {
+        margin-top: 25px;
+        width: 80%;
+        padding-left: 40px;
+      }
+      
+      .sidebar ul {
+        margin-top: 50px;
+      }
+      
+      .sidebar ul li {
+        height: 70px;
+        width: 100%;
+        list-style: none;
+      }
+      
+      .sidebar ul li a {
+        color: #ffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: lighter;
+        font-size: 22px;
+        text-decoration: none;
+      }
+      
+      .sidebar-icons {
+        width: 18%;
+        padding-right: 12px;
+        margin-right: 12px;
+      }
+      
+      .links_name {
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+      }
+      
+      .links_name:hover {
+        border-bottom: 3px solid #ffc703;
+      }
+
+        
+
+    /* Stefan CSS */ 

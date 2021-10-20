@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div id="mobile-banner">
+        <header class="banner" role="banner">
+            <img src="images/Logo.svg" class="bannerimage" alt="" id="mobileLogo">
+            <input type="image" src="images/usernameicon.svg" class="usernameicon" alt="">
+        </header>
+        </div>
+        <div id="website-banner" class="sidebar">
+               <div class="logo">
+                   <img src="images/Logo.svg" alt="" class="website-logo">
+               </div>
+               <ul class="nav_list_top">
+                   <li>
+                       <a href="#">
+                           <img src="images/homeicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">HOME</span>
+                       </a>
+                       <!--<span class="tooltip">Home</span>-->
+                   </li>
+                   <li>
+                    <a href="#" class="nav-links">
+                        <img src="images/favoritesicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">FAVORITES</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/communityicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">COMMUNITY</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shoppinglisticon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">SHOPPING LIST</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+               </ul>
+               <ul class="nav_list_bottom">
+                   <li>
+                       <a href="#">
+                           <img src="images/usernameicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SIGN IN</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/settingsicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SETTINGS</span>
+                       </a>
+                   </li>
+               </ul>
+        </div>
+
+    <main>
+        <div class="img-container">
+            <img class="recipe-pics" src="images/fishpic2.jpg" alt="fish dish">
+        </div>
+
+        <div class="title-container">
+            <h1 class="header">Fish and Salat</h1> 
+            <!-- Star Icon, that can highlighted // JS function localStorage -->
+            <p class="underhead"> 600 kcals | 50 min</p>
+        </div>
+
+            
+
+        <div class="todo-container"> <!-- Container w. display flex, flex-direction -->
+            <div class="right-side">
+                <h2 class="container-headline">Ingredients:</h2>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox">
+                    <label for="ingredientsItems">3 tbsp olive oil (45 ml)</label>
+                </div>
+                
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox">
+                    <label for="ingredientsItems">4 filets Tilapia (Or other white fish</label>
+                </div>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox"> 
+                    <label for="ingredientsItems">2 tbsp Lemon juice (30ml)</label>
+                </div>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox"> 
+                    <label for="ingredientsItems">2 tbsp Mirin (30ml)</label>
+                </div>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox">
+                    <label for="ingredientsItems">1/2 tsp Sambal Oelek (2.5 ml)</label>
+                </div>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox"> 
+                    <label for="ingredientsItems">3 Lebanese cucumbers</label>
+                </div>
+                <div class="container-items"> <!-- Container with ingredients -->
+                    <input type="checkbox" id="recipeCheckBox"> 
+                    <label for="ingredientsItems">1/2 cup Arugula (125 mg)</label>
+                </div>     
+            </div>
+
+            <div class="left-side">
+                <h2 class="container-headline2">Step by step:</h2>
+                <ul>
+                    <li>On the baking sheet, toss the sweet potatoes with 2 tbsp (30 ml) of the oil. Season with salt and pepper. Bake for about 30 minutes, stirring occasionally, or until the potatoes are tender and beginning to brown. Let cool.</li>
+                    <li>Meanwhile, in a non-stick skillet, brown the fish in the remaining oil (1 tbsp / 15ml) until the desired doneness. Season with salt and pepper. Let cool.</li>
+                    <li>In a small bowl, combine the lemon juice, mirin and sambal oelek.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="mobile-footer">
+        <footer class="footer" role="contentinfo">
+            <a href="#" class="home"><input type="image" src="images/homeicon.svg" class="home"></a>
+            <a href="#" class="favorites"><input type="image" src="images/favoritesicon.svg" class="favorites"></a>
+            <a href="#" class="shoppinglist"><input type="image" src="images/shoppinglisticon.svg" class= "shoppinglist"></a>
+            <a href="#" class="community"><input type="image" src="images/communityicon.svg" class="community"></a>
+        </footer> 
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
