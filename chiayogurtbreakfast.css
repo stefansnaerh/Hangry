@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Suranna&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.recipe-pics{
+    
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: row;
+    right: 190px;
+}
+
+.title-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    font-family: lobster;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #202020;
+
+    margin: auto;
+    margin-left: 18%;
+}
+
+.underhead{
+    margin: auto;
+    padding-top: 2%;
+    margin-left: 18%;
+
+    color: #202020;
+}
+
+
+.todo-container{
+    padding-top: 5%;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right-side{
+    height: 10rem;
+    width: 30rem;
+}   .container-headline{
+    color: #808080; 
+    font-size: 1.5rem;
+    }
+      .container-items{
+        margin-bottom: 1.5rem;
+    }
+    
+
+.left-side{
+    height: 10rem;
+    width: 31rem;
+
+}  .container-headline2{
+    color: #808080; 
+    font-size: 1.5rem;
+    }
+    li{
+        padding-bottom: 3rem;
+    }

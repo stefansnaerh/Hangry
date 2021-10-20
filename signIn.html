@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <div id="mobile-banner">
+        <header class="banner" role="banner">
+            <img src="images/Logo.svg" class="bannerimage" alt="" id="mobileLogo">
+            <input type="image" src="images/signinyellow.svg" class="usernameicon" alt="">
+        </header>
+        </div>
+        <div id="website-banner" class="sidebar">
+               <div class="logo">
+                   <img src="images/Logo.svg" alt="" class="website-logo">
+               </div>
+               <ul class="nav_list_top">
+                   <li>
+                       <a href="#">
+                           <img src="images/homeicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">HOME</span>
+                       </a>
+                       <!--<span class="tooltip">Home</span>-->
+                   </li>
+                   <li>
+                    <a href="#" class="nav-links">
+                        <img src="images/favoritesicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">FAVORITES</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/communityicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">COMMUNITY</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shoppinglisticon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">SHOPPING LIST</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+               </ul>
+               <ul class="nav_list_bottom">
+                   <li>
+                       <a href="#">
+                           <img src="images/usernameicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SIGN IN</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/settingsicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SETTINGS</span>
+                       </a>
+                   </li>
+               </ul>
+        </div>
+
+    <main>
+            <h1 class="header">Sign in</h1>
+            <div class="container-login"><!-- Sign in form -->
+            <form class="form" id="login-form">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder=" Ex. username">
+                </div>
+                <div class="error"></div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="button">
+                     <a href="#"> <!-- BREYTA FYRIR -->
+                <button type="signIn" id="signIn">Sign In</button>
+                </a>
+                </div>
+            </form>
+        </div>
+        <div class="altsignin">
+        <p class="altSignInText">Or sign in with</p>
+        <div class="alt-signIn">
+            <a href="#">
+                <div class="facebook">
+                    <i class="fab fa-facebook"></i>
+                    <p class=""> </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="instagram">
+                    <i class="fab fa-instagram"></i>
+                    <p></p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="github">
+                    <i class="fab fa-github"></i> 
+                    <p></p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                    <p></p>
+                </div>
+            </a>
+         </div>
+            <p class="create-account">Don´t have an account yet? <a href="#">&#160Sign up!</a></p>
+         </div>
+
+
+    </main>
+
+    <div id="mobile-footer">
+        <footer class="footer" role="contentinfo">
+            <a href="#" class="home"><input type="image" src="images/homeicon.svg" class="home"></a>
+            <a href="#" class="favorites"><input type="image" src="images/favoritesicon.svg" class="favorites"></a>
+            <a href="#" class="shoppinglist"><input type="image" src="images/shoppinglisticon.svg" class= "shoppinglist"></a>
+            <a href="#" class="community"><input type="image" src="images/communityicon.svg" class="community"></a>
+        </footer> 
+        </div>
+
+    <script src="signin.js"></script>
+</body>
+</html>
