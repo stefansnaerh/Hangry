@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addrecipes.css">
+    <title>Add a recipe</title>
+</head>
+<body>
+    <div id="mobile-banner">
+        <header class="banner" role="banner">
+            <img src="images/Logo.svg" class="bannerimage" alt="" id="mobileLogo">
+            <input type="image" src="images/usernameicon.svg" class="usernameicon" alt="">
+        </header>
+        </div>
+        <div id="website-banner" class="sidebar">
+               <div class="logo">
+                   <img src="images/Logo.svg" alt="" class="website-logo">
+               </div>
+               <ul class="nav_list_top">
+                   <li>
+                       <a href="#">
+                           <img src="images/homeicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">HOME</span>
+                       </a>
+                       <!--<span class="tooltip">Home</span>-->
+                   </li>
+                   <li>
+                    <a href="#" class="nav-links">
+                        <img src="images/favoritesicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">FAVORITES</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/communityicon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">COMMUNITY</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shoppinglisticon.svg" alt="" class="sidebar-icons">
+                        <span class="links_name">SHOPPING LIST</span>
+                    </a>
+                    <!--<span class="tooltip">Home</span>-->
+                </li>
+               </ul>
+               <ul class="nav_list_bottom">
+                   <li>
+                       <a href="#">
+                           <img src="images/usernameicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SIGN IN</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/settingsicon.svg" alt="" class="sidebar-icons">
+                           <span class="links_name">SETTINGS</span>
+                       </a>
+                   </li>
+               </ul>
+        </div>
+    
+    <main>
+    
+         <div class="recipe-title-container">  <!--Main content -->
+            <h2 class="header">Add a Recipe</h2>
+            <div class="addrecipe-container">
+                <div class="recipe-title">
+                    <label>Recipe Title:</label>
+                    <input class="boxstyling" type="text" name="recipe-title" id="recipeTitle">
+                </div>
+                <div class="recipe-type">
+                <label for="recipe-type">Recipe Type:</label>
+                <select class="boxstyling" name="recipe-type" id="recipeType">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+
+                </div>
+            </div>
+            <p>Recipe Image:</p>
+            <div class="imgcontainer">
+
+                <input class="imgstyle" type="text" placeholder="jpeg, png, svg">
+                <button class="imgbutton">Add image</button>
+            </div>
+
+            <div class="ingredients">
+                <p>Add Ingredients:</p>
+                <div class="input-container">
+                    <input type="text" placeholder="ex. 2 Eggs" id="ing1">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="ing2">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="ing3">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="ing4">
+                </div>
+
+                <div class="new-input-container"></div> <!-- when button is pushed input created in js -->
+            </div>
+            <button class="addbtn-input">Add more</button> <!-- js function to add another label and input. -->
+        </div>
+
+        <div class="stepByStep">
+            <p>Recipe steps:</p>
+            <div class="sbsitems">
+                <textarea name="step1" id="step1" cols="30" rows="10" placeholder="ex. Fry the bacon on medium heat"></textarea>
+            </div>
+            <div class="sbsitems">
+                <textarea name="step2" id="step2" cols="30" rows="10"></textarea>
+            </div>
+            <div class="sbsitems">
+                <textarea name="step3" id="step3" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="new-textarea-container"></div>
+        </div>  
+
+        <button class="addbtn-textarea">Add more</button> <!-- js function to add another label and input. -->
+
+        <div class="submit-button-container">
+            <button class="submit-button" id="submitBtn">Submit Recipe!</button>
+        </div>
+</main>
+
+<div id="mobile-footer">
+    <footer class="footer" role="contentinfo">
+        <a href="#" class="home"><input type="image" src="images/homeicon.svg" class="home"></a>
+        <a href="#" class="favorites"><input type="image" src="images/favoritesicon.svg" class="favorites"></a>
+        <a href="#" class="shoppinglist"><input type="image" src="images/shoppinglisticon.svg" class= "shoppinglist"></a>
+        <a href="#" class="community"><input type="image" src="images/communityicon.svg" class="community"></a>
+    </footer> 
+    </div>
+
+    <script src="addrecipes.js"></script>
+</body>
+</html>
