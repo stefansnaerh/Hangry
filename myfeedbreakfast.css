@@ -24,7 +24,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 99;
 }
 
 .banner .bannerimage {
@@ -147,7 +147,7 @@
   background-color: none;
 }
 
-.breakfastCards .starOn {
+.breakfastCards .star {
   position: absolute;
   background-color: white;
   border-radius: 999px;
@@ -156,37 +156,18 @@
   -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
           box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
   z-index: 1;
-  padding: 6px;
-  padding-right: 25px;
-  display: none;
+  padding: 9px;
+  padding-right: 40px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  color: #ffc703;
 }
 
-.breakfastCards .starOn:hover {
+.breakfastCards .star:hover {
   background-color: #FFF4CD;
 }
 
-.breakfastCards .starOff {
-  position: absolute;
-  background-color: white;
-  border-radius: 999px;
-  cursor: pointer;
-  border: none;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
-          box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.3);
-  z-index: 1;
-  padding: 5px;
-  padding-right: 25px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.breakfastCards .starOff:hover {
-  background-color: #FFF4CD;
-}
-
-.breakfastCards .count {
+.breakfastCards #count {
   position: absolute;
   padding-left: 35px;
   padding-top: 7px;
@@ -244,7 +225,7 @@
   position: sticky;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 99;
 }
 
 .footer .warp {

@@ -62,7 +62,7 @@
   }
 }
 // making mobile content scale better on bigger screens
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 375px) {
   // .banner {
   //   height: 12%;
   // }
@@ -71,7 +71,6 @@
   }
   .usernameicon {
     width: 30px;
-    margin-right: 5%;
   }
 }
 
@@ -162,10 +161,9 @@ h1 {
   justify-content: center;
   margin-top: 25vw;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 375px) {
   h1 {
     font-size: 36px;
-    margin-top: 40px;
   }
 }
 
@@ -193,7 +191,7 @@ h1 {
     padding: 30px 20px;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 375px) {
     #newItem {
       font-size: 66px;
       // margin-left: 300px;
@@ -214,7 +212,14 @@ h1 {
     padding-left: 15px;
     border: 2px solid #ffc703;
     transition: 0.3s ease-in-out;
-  }  
+  }
+
+  @media only screen and (max-width: 375px) {
+    #newItem input{
+      width: 200px;
+      height: 25px;
+    }
+  }
 
   @media only screen and (min-width: 1100px) {
     #newItem input{
@@ -242,6 +247,13 @@ h1 {
     cursor: pointer;
   }
 
+  @media only screen and (max-width: 375px) {
+    #newItem button{
+      width: 80px;
+      height: 25px;
+    }
+  }
+
   @media only screen and (min-width: 1100px) {
     #newItem button{
       width: 150px;
@@ -261,16 +273,15 @@ h1 {
     width: 65vw;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 375px) {
     #items{
         max-width: 500px;
-        margin-left: 300px;
     }
   }
 
   @media only screen and (min-width: 1100px) {
     #items{
-        font-size: 1vw;
+        font-size: 20px;
         width:920px;
         margin-left: 300px;
     }
@@ -296,7 +307,7 @@ h1 {
 
   @media only screen and (min-width: 1100px) {
     .item span{
-        font-size: 57.5px;
+        font-size: 30px;
     }
   }
 
@@ -305,8 +316,8 @@ h1 {
     color: white;
     border-radius: 10px;
     border: none;
-    width: 6vw;
-    height: 70%;
+    width: 40px;
+    height: 40px;
     transition: 0.3s ease-in-out;
   }
 
@@ -314,6 +325,20 @@ h1 {
     background-color: #ffc703;
     color: black;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 375px) {
+    .item button{
+        max-width: 40px;
+        max-height: 40px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .item button{
+        width: 50px;
+        height: 50px;
+    }
   }
 
   .completed {
