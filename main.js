@@ -13,7 +13,7 @@ let time = new Date().getHours();
 if (time < 10) {
 title.innerHTML=("What's for breakfast?");
 document.getElementById("morning").src="images/Startpage-Breakfast.png";
-} else if (time < 10) {
+} else if (time < 14) {
     title.innerHTML=("What's for lunch?");
 document.getElementById("morning").src="images/lunch.png";
 
