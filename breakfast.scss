@@ -44,8 +44,6 @@
   font-family: lobster;
 }
 
-// ath. Þarf að laga flex-wrap þegar skjárinn er dreginn út þá fara neðstu myndirnar í miðjuna en ekki til vinstri.
-// Recipe images with the text card and star button //FFC703 YELLOW
 // MAIN CONTENT
 .container_breakfast{
   display: flex;
@@ -53,7 +51,7 @@
   position: relative;
   justify-content: center;
   align-items: row;
-  //gap: 25px;
+  gap: 25px;
   padding: 10px;
   
 }
