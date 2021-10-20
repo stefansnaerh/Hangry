@@ -63,9 +63,9 @@
 }
 // making mobile content scale better on bigger screens
 @media only screen and (min-width: 480px) {
-  .banner {
-    height: 12%;
-  }
+  // .banner {
+  //   height: 12%;
+  // }
   .bannerimage {
     width: 130px;
   }
@@ -100,6 +100,7 @@
   width: 300px;
   background: #202020;
   padding: 6px 14px;
+  z-index: 99;
 }
 .website-logo {
   margin-top: 25px;
@@ -156,22 +157,25 @@ body {
 
 h1 {
   font-family: lobster;
-  font-size: 66px;
+  font-size: 10vw;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 25vw;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   h1 {
-    font-size: 66px;
+    font-size: 36px;
     margin-top: 40px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1100px) {
   h1 {
-    font-size: 36px;
-    margin-top: 150px;
+    font-size: 95px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    
   }
 }
 
@@ -181,18 +185,50 @@ h1 {
   justify-content: center;
   align-items: center;
 
+
+
+  
+
   #newItem {
     padding: 30px 20px;
   }
 
+  @media only screen and (max-width: 480px) {
+    #newItem {
+      font-size: 66px;
+      // margin-left: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    #newItem {
+      font-size: 66px;
+      margin-left: 300px;
+    }
+  }
+
   #newItem input {
-    width: 50vw;
+    width: 40vw;
     height: 5vw;
     border-radius: 10px;
     padding-left: 15px;
     border: 2px solid #ffc703;
     transition: 0.3s ease-in-out;
+  }  
+  @media only screen and (max-width: 480px) {
+    #newItem input{
+      
+    }
   }
+
+  @media only screen and (min-width: 1100px) {
+    #newItem input{
+      width: 750px;
+      height: 50px;
+    }
+  }
+
+  
 
   #newItem input:focus {
     outline: none;
@@ -211,6 +247,19 @@ h1 {
     cursor: pointer;
   }
 
+  @media only screen and (max-width: 480px) {
+    #newItem input{
+      
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    #newItem button{
+      width: 150px;
+      height: 50px;
+    }
+  }
+
   #newItem button:hover {
     background-color: #ffc703;
     color: black;
@@ -223,6 +272,21 @@ h1 {
     width: 65vw;
   }
 
+  @media only screen and (max-width: 480px) {
+    #items{
+        max-width: 500px;
+        margin-left: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    #items{
+        font-size: 1vw;
+        width:920px;
+        margin-left: 300px;
+    }
+  }
+
   .item {
     height: 50px;
     padding: 5px 10px;
@@ -233,11 +297,18 @@ h1 {
     border-bottom: 1px solid black;
   }
 
+
   .item span {
     font-family: roboto;
     font-size: 4vw;
     font-weight: 400;
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .item span{
+        font-size: 57.5px;
+    }
   }
 
   .item button {
