@@ -1,10 +1,13 @@
+const itemsDiv = document.querySelector("#items");
+console.log(itemsDiv)
 document.querySelector("#push").onclick = function
 (){
   if(document.querySelector("#newItem input").value.length == 0){
     alert("please write item")
   }
   else{
-    document.querySelector("#items").innerHTML += `
+    console.log(itemsDiv)
+    itemsDiv.innerHTML += `
     <div class="item">
       <span id="itemName">
         ${document.querySelector ("#newItem input").value}
@@ -13,12 +16,14 @@ document.querySelector("#push").onclick = function
         <i class="far fa-trash-alt"></i>
       </button>
     </div>  `;
+    localStorage.setItem("items", itemsDiv.innerHTML)
 
     let currentItem = document.querySelectorAll(".remove");
     for(let i=0; i<currentItem.length; i++){
       currentItem[i].onclick = function(){
         this.parentNode.remove();
       }
+      localStorage.setItem("items", itemsDiv.innerHTML)
     }
 
     let items = document.querySelectorAll(".item");
@@ -26,10 +31,11 @@ document.querySelector("#push").onclick = function
       items[i].onclick = function(){
         this.classList.toggle("completed");
       }
+      localStorage.setItem("items", itemsDiv.innerHTML)
     }
 
     document.querySelector("#newItem input").value = "";
   }
 }
 
-
+items.innerHTML = localStorage.getItem("items")
