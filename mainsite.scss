@@ -9,6 +9,10 @@
 }
 
 //.banner & .footer is the navbar
+
+header a {
+  margin-right: 25px;
+}
 .banner {
   display: flex;
   justify-content: space-between;

@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+header a {
+  margin-right: 25px;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;

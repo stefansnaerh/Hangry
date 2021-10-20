@@ -7,7 +7,9 @@
   padding: 0;
   margin: 0;
 }
-
+header a {
+  margin-right: 30px;
+}
 //.banner & .footer is the navbar
 .banner {
   display: flex;
