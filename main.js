@@ -24,3 +24,66 @@ document.getElementById("morning").src="images/dinner.png";
 title.innerHTML=("What's for dinner?");
 };
  time();
+
+
+
+
+
+
+
+// function whatTime (){
+//     let date = new Date();
+//     let timeNow = d.getHours();
+//     if(timeNow < 10) {
+//         lunch.remove();
+//         dinner.remove();
+//     }
+//         else if (timeNow > 10 || timeNow < 15 ){
+//             dinner.remove();
+//             breakfast.remove();
+//         }
+//             else {
+//                 breakfast.remove();
+//                 lunch.remove();
+//             }
+// }
+// window.onload = whatTime;
+
+
+
+
+// let id = (id) => document.getElementById(id);
+// let classes = (classes) => document.getElementsByClassName(classes);
+
+
+
+// let lunch = getElementById('noon');
+// let breakfast = getElementById('morning');
+// let dinner = getElementById('night');
+
+
+// let id = (id) => document.getElementById(id);
+// let classes = (classes) => document.getElementsByClassName(classes);
+// var removeImage = docoment.getElementById("container")
+
+
+
+//let whatPic = (id, backgroundImage) => {
+//  if ( whatTime > 10 ) {
+//      breakfast[breakfast].style.opacity = "1";
+//      lunch[].style.opacity = "0";
+//      breakfast[serial].style.opacity = "0";
+//  }
+//      else if ( whatTime < 10 > 16) {
+//          breakfast[serial].style.opacity = "0";
+//          breakfast[serial].style.opacity = "1";
+//          breakfast[serial].style.opacity = "0";
+//      }
+//      else {
+//          breakfast[serial].style.opacity = "0";
+//          breakfast[serial].style.opacity = "0";
+//          breakfast[serial].style.opacity = "1";
+//      }
+//}
+
+//whatPic ()
